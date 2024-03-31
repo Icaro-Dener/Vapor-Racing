@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(347, 64%, 4%);
+}
+
+.meuheader {
+    height: 150px;
+    width: 100%;
+    border: 1px solid black;
+    background: linear-gradient(#15040a, #3d0d19);
+    background-image: linear-gradient(#640831, #538fffd5), url(assets/VAPORBACK.jpg);
+    background-position: center;
+    background-size: 89%;
+    /* filter: grayscale(100%) */
+    background-blend-mode: multiply;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.escrita {
+    margin: 0;
+
+}
+
+.pista {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border: 3px solid;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.road {
+    margin: 0;
+}
+
+.retryPai {
+    position: absolute;
+    left: 0;
+    top: 251px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.retry {
+    width: 149px;
+    height: 15px;
+    border: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #15040a00;
+    font-size: 52px;
+    color: white;
+    text-shadow: black -5px 0px 4px;
+}
+
+.retry:hover {
+    color: rgb(144, 144, 144);
+    text-shadow: black -5px 0px 4px;
+}
+
+.gameOver {
+    color: wheat;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: black -5px 0px 4px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.scoreAtual {
+    position: relative;
+    top: -490px;
+    left: 377px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 30px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: auto;
+}
+
+.rock {
+    width: 20px;
+    position: absolute;
+    bottom: 231px;
+    left: 228px;
+    animation-name: pedraMove;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.rock2 {
+    width: 20px;
+    position: absolute;
+    bottom: 231px;
+    left: 260px;
+    animation-name: pedraMoveDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.car {
+    width: 93px;
+    position: absolute;
+    bottom: 0px;
+    transition: left ease 0.5s;
+}
+
+.cardireita {
+    left: 282px;
+    transform: scaleX(-1);
+}
+
+.caresquerda {
+    left: 132px;
+
+}
+
+.aviso {
+    color: white;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    padding: 4px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    animation-name: intext;
+    animation-duration: 15s;
+}
+
+@keyframes intext {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes pedraMove {
+    from {
+        width: 20px;
+        bottom: 231px;
+        left: 228px;
+    }
+
+    to {
+        width: 67px;
+        bottom: -64px;
+        left: 132px;
+    }
+}
+
+@keyframes pedraMoveDireita {
+    from {
+        width: 20px;
+        bottom: 231px;
+        left: 260px;
+    }
+
+    to {
+        width: 67px;
+        bottom: -64px;
+        left: 333px;
+    }
+}
+
+.começo {
+    position: absolute;
+    left: 0;
+    top: 251px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.play {
+    width: 149px;
+    height: 15px;
+    border: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #15040a00;
+    font-size: 52px;
+    color: white;
+    text-shadow: black -5px 0px 4px;
+}
+
+.play:hover {
+    color: rgb(144, 144, 144);
+    text-shadow: black -5px 0px 4px;
+}
+
+.VaporRacing {
+    color: wheat;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: black -5px 0px 4px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.hidden2 {
+    opacity: 0;
+    display: none;
+}
+
+#botoes {
+    position: relative;
+    display: flex;
+    top: -456px;
+    left: 387px;
+    justify-content: end;
+    margin: auto;
+    width: 6%;
+}
+
+.botao1 {
+    padding: 11px;
+    background-color: #2a1119;
+    color: white;
+    text-shadow: black -5px 0px 4px;
+    border-color: #f000;
+    border-radius: 17px;
+    font-size: 23px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    left: -30px;
+    transition: ease 0.5s;
+    width: 120px;
+}
+.botao1:hover {
+    background-color: #4b1b2a;
+}
+.botao2 {
+    padding: 11px;
+    background-color: #2a1119;
+    color: white;
+    text-shadow: black -5px 0px 4px;
+    border-color: #f000;
+    border-radius: 17px;
+    font-size: 23px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    left: -30px;
+    transition: ease 0.5s;
+    width: 120px;
+}
+.botao2:hover {
+    background-color: #4b1b2a;
+}
