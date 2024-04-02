@@ -31,12 +31,12 @@ body {
     height: 500px;
     width: 500px;
     margin: auto;
-    border: 3px solid;
+    border: 1px solid;
     padding: 0px;
     position: relative;
     overflow: hidden;
+    box-shadow: black 0px 12px 32px;
 }
-
 .road {
     margin: 0;
 }
@@ -147,15 +147,32 @@ body {
 }
 
 .aviso {
-    color: white;
-    margin: auto;
     position: relative;
+    top: -571px;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 521px;
+    height: 800px;
+    z-index: -1;
+    margin: auto;
     text-align: center;
     font-size: 50px;
     padding: 4px;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: #2a1119;
+    box-shadow: black 1px 0px 51px;
+}
+
+.Press {
+    position: absolute;
+    left: 104px;
+    top: 520px;
     animation-name: intext;
     animation-duration: 15s;
 }
@@ -250,7 +267,7 @@ body {
     left: 387px;
     justify-content: end;
     margin: auto;
-    width: 6%;
+    width: 70px;
 }
 
 .botao1 {
@@ -269,9 +286,11 @@ body {
     transition: ease 0.5s;
     width: 120px;
 }
+
 .botao1:hover {
     background-color: #4b1b2a;
 }
+
 .botao2 {
     padding: 11px;
     background-color: #2a1119;
@@ -288,6 +307,7 @@ body {
     transition: ease 0.5s;
     width: 120px;
 }
+
 .botao2:hover {
     background-color: #4b1b2a;
 }
